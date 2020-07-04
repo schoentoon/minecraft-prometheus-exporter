@@ -21,6 +21,7 @@ public class PrometheusExporterConfig {
             metricConfig("jvm_memory", true, Memory::new),
             metricConfig("players_online_total", true, PlayersOnlineTotal::new),
             metricConfig("players_total", true, PlayersTotal::new),
+            metricConfig("players_ping", true, PlayerPing::new),
             metricConfig("tps", true, Tps::new),
 
             metricConfig("jvm_threads", true, ThreadsWrapper::new),
