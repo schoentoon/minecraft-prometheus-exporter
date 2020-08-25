@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <bukkit.version>1.15.1-R0.1-SNAPSHOT</bukkit.version>
+        <paper.version>1.16.1-R0.1-SNAPSHOT</paper.version>
         <jetty.version>9.4.28.v20200408</jetty.version>
         <prometheus-client.version>0.8.1</prometheus-client.version>
         <junit.jupiter.version>5.5.2</junit.jupiter.version>
@@ -36,13 +36,7 @@
         <dependency>
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>${bukkit.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>${bukkit.version}</version>
+            <version>${paper.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

@@ -13,11 +13,13 @@ public abstract class PlayerMetric extends Metric {
 
     @Override
     public final void doCollect() {
+        clear();
         for (OfflinePlayer player : Bukkit.getOfflinePlayers()) {
             collect(player);
         }
     }
 
+    protected void clear() {};
     protected abstract void collect(OfflinePlayer player);
 
     protected String getUid(OfflinePlayer player) {
